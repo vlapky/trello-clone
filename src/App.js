@@ -11,7 +11,7 @@ import {
   ChangeFlag,
 } from './redux/actionCreator'
 import { Component } from 'react'
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom'
 import Boards from './pages/Boards'
 import Cards from './pages/Cards'
 import './styles.css'
@@ -31,7 +31,7 @@ class App extends Component {
       EditCard,
     } = this.props
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route exact={true} path="/boards">
             <Boards
@@ -58,7 +58,7 @@ class App extends Component {
             render={() => <Redirect to="/boards" />}
           />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }

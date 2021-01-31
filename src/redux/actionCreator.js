@@ -7,7 +7,6 @@ import {
   EDIT_CARD,
   ADD_ITEM,
   DEL_ITEM,
-  EDIT_ITEM,
   CHANGE_FLAG,
 } from './constants'
 
